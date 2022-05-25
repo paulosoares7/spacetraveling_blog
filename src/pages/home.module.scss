@@ -1,1 +1,65 @@
-// TODO
+.container {
+  max-width: 1220px;
+  margin:  0 auto;
+  padding: 0 15rem;
+  a {
+    display: block;
+    
+    & + a {
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+    time {
+      font-size:  1rem;
+      display: flex;
+      align-items: center;
+    }
+    strong{
+      display: block;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+      color: var(--heading);
+      
+      transition: color 0.3s
+    }
+    p {
+      color: var(--body);
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.625rem;
+    }
+    &:hover strong {
+      color: var(--highlight)
+  }
+  }
+}
+.infoContent {
+  display: flex;
+  align-items: center;
+  
+  time {
+    margin-right: 1rem;
+  }
+}
+.icons{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.buttonNextPost {
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: var(--highlight);
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  background: transparent;
+  border: none;
+
+  transition: all 0.3s;
+
+  &:hover {
+      transform: translateY(-3px);
+  }
+}
